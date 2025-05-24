@@ -2,7 +2,7 @@
  using namespace std;
  class professor
  {
-    protected:
+    private:
     string p_name;
     string department;
     int year;
@@ -30,7 +30,7 @@
  };
  class student
  {
-    protected:
+    private:
     string name,faculty;
     public:
     student()
