@@ -48,7 +48,7 @@
             cout<<"faculty:"<<faculty<<endl;
         }
  };
- class course :public professor,public student
+ class course :private professor,private student
  {
     public:
     string coursename;
@@ -64,6 +64,8 @@
     }
     void cdisplay()
     {
+        pdisplay();
+        sdisplay();
         cout<<"course name:"<<coursename<<endl;
         cout<<"course code:"<<coursecode<<endl;
         cout<<"credit:"<<credit<<endl;
@@ -72,7 +74,6 @@
  int main()
  {
     course s;
-    s.pdisplay();
-    s.sdisplay();
+   
     s.cdisplay();
  }
